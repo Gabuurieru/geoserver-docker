@@ -1,0 +1,12 @@
+geoserver:
+  container_name: geoserver
+  build: .
+  tty: true
+  stdin_open: true
+  ports:
+    - "8080:8080"
+#conexao com o banco
+#  environment:
+#    - db_url=jdbc:postgresql://localhost:5432/<seu-banco>
+#    - db_user=<usuario>
+#    - db_password=<senha>
